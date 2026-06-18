@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELTO - Fintech Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+        
+        <aside class="w-full md:w-64 bg-slate-950 p-6 flex flex-col justify-between border-b md:border-b-0 md:border-r border-slate-800">
+            <div>
+                <div class="flex items-center space-x-3 mb-8">
+                    <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center font-bold text-white shadow-lg shadow-blue-500/30">V</div>
+                    <span class="text-xl font-bold tracking-wider text-white">VELTO</span>
+                </div>
+                <nav class="space-y-2">
+                    <a href="#" class="flex items-center space-x-3 bg-blue-600/10 text-blue-400 p-3 rounded-lg font-medium transition-all">
+                        <span>📊</span> <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-900 hover:text-slate-200 p-3 rounded-lg font-medium transition-all">
+                        <span>💰</span> <span>Investimentos</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-900 hover:text-slate-200 p-3 rounded-lg font-medium transition-all">
+                        <span>🔗</span> <span>Links de Cobrança</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-900 hover:text-slate-200 p-3 rounded-lg font-medium transition-all">
+                        <span>📅</span> <span>Agenda de Pagamentos</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="hidden md:block pt-6 border-t border-slate-800">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-slate-800 rounded-full border border-slate-700 flex items-center justify-center text-sm font-semibold">TH</div>
+                    <div>
+                        <p class="text-sm font-medium text-slate-200">Thayna Prestes</p>
+                        <p class="text-xs text-slate-500">Premium Account</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-4 md:p-8 space-y-6 overflow-y-auto">
+            
+            <header class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Olá, Thayna</h1>
+                    <p class="text-slate-400 text-sm mt-1">Acompanhe as movimentações da sua fintech em tempo real.</p>
+                </div>
+                <div class="flex space-x-3">
+                    <button class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg shadow-lg shadow-blue-600/20 transition-all text-sm">
+                        + Novo Link de Cobrança
+                    </button>
+                </div>
+            </header>
+
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center text-slate-400 text-xs font-semibold tracking-wider uppercase mb-2">
+                            <span>Saldo Disponível</span>
+                            <span>💳</span>
+                        </div>
+                        <p class="text-3xl font-bold text-white font-mono custom-money">R$ 14.850,20</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-900 text-xs text-slate-500 flex justify-between">
+                        <span>Agência: 0001</span>
+                        <span>Conta: 98765-4</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center text-slate-400 text-xs font-semibold tracking-wider uppercase mb-2">
+                            <span>Total Investido</span>
+                            <span>📈</span>
+                        </div>
+                        <p class="text-3xl font-bold text-emerald-400 font-mono">R$ 52.310,00</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-900 text-xs text-emerald-500 flex items-center space-x-1">
+                        <span>▲ +4,2% este mês</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center text-slate-400 text-xs font-semibold tracking-wider uppercase mb-2">
+                            <span>Próximos Pagamentos</span>
+                            <span>📅</span>
+                        </div>
+                        <p class="text-3xl font-bold text-amber-400 font-mono">R$ 2.450,00</p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-900 text-xs text-slate-500">
+                        <span>Próximo vencimento: 22/06</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                
+                <div class="lg:col-span-2 bg-slate-950 p-6 rounded-xl border border-slate-800 shadow-md overflow-x-auto">
+                    <h3 class="text-lg font-bold text-white mb-4">Últimas Transações</h3>
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-800 text-slate-400 text-xs font-semibold uppercase tracking-wider">
+                                <th class="pb-3">Descrição</th>
+                                <th class="pb-3">Data</th>
+                                <th class="pb-3 text-right">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-900 text-sm">
+                            <tr>
+                                <td class="py-3.5 font-medium text-slate-200">Aporte em Renda Fixa</td>
+                                <td class="py-3.5 text-slate-400">18/06/2026</td>
+                                <td class="py-3.5 text-right text-amber-400 font-mono">- R$ 5.000,00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 font-medium text-slate-200">Recebimento Link #042</td>
+                                <td class="py-3.5 text-slate-400">17/06/2026</td>
+                                <td class="py-3.5 text-right text-emerald-400 font-mono">+ R$ 1.250,00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 font-medium text-slate-200">Pagamento de Fornecedor</td>
+                                <td class="py-3.5 text-slate-400">15/06/2026</td>
+                                <td class="py-3.5 text-right text-amber-400 font-mono">- R$ 320,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 shadow-md">
+                    <h3 class="text-lg font-bold text-white mb-4">Links de Cobrança Ativos</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-900 rounded-lg border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <p class="text-sm font-medium text-slate-200">Consultoria Estética</p>
+                                <p class="text-xs text-blue-400 font-mono truncate max-w-[150px]">velto.pay/c/estet-01</p>
+                            </div>
+                            <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-medium">Ativo</span>
+                        </div>
+                        <div class="p-3.5 bg-slate-900 rounded-lg border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <p class="text-sm font-medium text-slate-200">Honorários Advocatícios</p>
+                                <p class="text-xs text-blue-400 font-mono truncate max-w-[150px]">velto.pay/c/adv-prestes</p>
+                            </div>
+                            <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-medium">Ativo</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

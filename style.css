@@ -1,0 +1,28 @@
+/* Customizações globais de marca e fontes da VELTO */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Efeito sutil de brilho nos cards de dinheiro */
+.custom-money {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+/* Scrollbar estilizada e elegante para a máquina do professor */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #1e293b; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155; 
+}
